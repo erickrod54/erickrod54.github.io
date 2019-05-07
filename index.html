@@ -1,73 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Startup</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-    <!-- Your own stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!-- CDN de fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="wrapper">
-        <header class="header">
-          <li>
-            <ul><a style="text-decoration: none;" href=""><h4>Mi Perfil</h4></a></ul>
-          </li>
-          <li>
-            <ul><a style="text-decoration: none;" href=""><h4>Sobre mi</h4></a></ul>
-          </li>
-        </header>
-        <article class="main">
-                <div class="container1">
-                      <h2>Erick Gabriel Rodriguez - Full Stack Web Developer</h2>
-                </div>
-                <div class="container2">
-                      <a href="contact.html" class="btn btn-primary btn-lg">Consulta Informacion</a>
-                </div>
-        </article>
-
-        <footer class="footer">
-          <li>
-            <ul>
-              <a style="text-decoration:none;" target="_blank" href="https://github.com/erickrod54?tab=overview&from=2018-12-01&to=2018-12-31"><i class="fab fa-github fa-3x fa-lg"></i>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <a style="text-decoration:none;" target="_blank" href="https://www.linkedin.com/in/erickrodriguezcardenas/"><i class="fab fa-linkedin fa-3x fa-lg"></i></a>
-            </ul>
-          </li>
-          <li>
-            <li>
-              <ul> <!--Agregamos enlace gitlab-->
-                <a style="text-decoration:none;" target="_blank" href="https://gitlab.com/users/sign_in"><i class="fab fa-gitlab fa-3x fa-lg"></i>
-              </ul>
-            </li>
-      </footer>
-    </div>
-  </body>
-<!--
+<head>
+  <title>Layout Master</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!--Me modifica el tamano de la seccion cover mm averiguar porque-->
+  <!-- CDN de fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
 <body>
-        <header>
-          <li>
-            <ul>Mi Perfil</ul>
-            <ul>Sobre mi</ul>
-          </li>
-        </header>
-        <div class="container1">
-              <h1>Erick Gabriel Rodriguez - Full Stack Web Developer</h1>
-        </div>
-        <div class="container2">
-              <a href="contact.html" class="btn btn-primary btn-lg">Consulta Informacion</a>
-        </div>
-  </body>
--->
+  <nav class="zone green" style="background-image:url(footer_navbar.jpg);background-size:cover">
+    <ul class="main-nav">
+        <li><a style="text-decoration: none;color: #f5f5f6;" href="">Mi Perfil</a></li>
+        <li><a style="text-decoration: none;color: #f5f5f6;" href="">Sobre mi</a></li>
+        <li class="push"><a style="text-decoration: none;color: #f5f5f6;" href="">Login</a></li>
+    </ul>
+  </nav>
+  <div class="container-fluid zone red" style="background-image:url(header.jpg);background-size:cover"><!--<img src="header.jpg" alt="" class="cover">--><!--si usamos bootstrap no podemos usar un nombre
+                                           'container para la clase, puesto que
+                                           por bootstrap tiene sus propias propiedades'-->
+    <ul class="cover-nav">
+      <li>Erick Gabriel Rodriguez - Full Stack Web Developer</li><br>
+      <li><a href="contact.html" class="btn btn-primary btn-lg">Consulta Informacion</a></li>
+    </ul>
+  </div>
+  <footer class="zone yellow" style="background-image:url(footer_navbar.jpg);background-size:cover">
+    <ul class="footer-icons">
+      <li><a target="_blank" href="https://github.com/erickrod54?tab=overview&from=2018-12-01&to=2018-12-31"><i class="fab fa-github"></i></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/erickrodriguezcardenas/"><i class="fab fa-linkedin "></i></a></li>
+      <li><a target="_blank" href="https://gitlab.com/users/sign_in"><i class="fab fa-gitlab"></i></li>
+    </ul>
+  </footer>
+</div>
+</body>
 </html>
